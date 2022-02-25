@@ -1,0 +1,168 @@
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.c-2{
+    .bordas{
+        border-color: $azul-claro;
+    }
+}
+.sbold{
+    font-weight: 600
+}
+.bold{
+    font-weight: 800;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+.zindex-999{
+    z-index: 999;
+}
+.active{
+    background-color: #e7e7e7;
+}
+.c-header{
+    background-color: #e7e7e7;
+}
+.cards{
+    margin-bottom: 87px;
+}
+.active-p{
+    background-color: $azul;
+    transition: 0.5s;
+    h2{
+        color: $branco !important;
+        span{
+            color: $branco !important;
+        }
+    }
+    h3{
+        color: $branco !important;
+    }
+    p{
+        color: $branco !important;
+    }
+    svg{
+        circle{
+            fill: $branco;
+        }
+        path{
+            fill: $azul;
+        }
+        
+    }
+}
+
+.peg{
+    .peg-c{
+        cursor: pointer;
+        padding: 10px;
+    }
+    }
+    
+@mixin bg-img($img){
+    background-image: url('../img/#{$img}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn{
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 130%;
+    font-family:'Fredoka One', cursive;
+    padding:16px 56px;
+   
+}
+
+.btn-azul-claro{
+    padding: 10px 16px;
+    border: none;
+    background-color: $azul-claro;
+    color: $branco;
+    &:hover{
+        color: $azul-escuro;
+        background-color: transparent;
+        border: 1px solid $azul-escuro;
+    }
+}
+
+.btn-branco{
+    color:white;
+    &:hover{
+        color: $azul-escuro;
+    }
+
+    @media screen and (max-width: $md) {
+        width:'100%';
+    }
+}
+
+.btn-azul-escuro{
+    background-color: $azul-escuro;
+    color: $branco;
+    padding: 10px 30px;
+    &:hover{
+        color: $azul-escuro;
+        background-color: transparent;
+        border: 1px solid $azul-escuro;
+    }
+}
+
+.btn-gradiente{
+    background-color: $branco;
+    color: $azul-claro;
+    padding: 16px 48px;
+    transition: 0.7s;
+    &:hover{
+        background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
+        color: $branco;
+        border: none;
+    }
+}
+
+
+.bordas{
+    border-top: 6px solid $azul;
+    max-width: 57px;
+}
+.h-78{
+    max-height: 78px;
+}
+.text-e{
+    display: none;
+}
+.cont-new{
+    z-index: 999;
+}
+
+/*
+button,
+input,
+select {
+    &:focus,
+    &:active,
+    &:focus &:active {
+        outline: none!important;
+        box-shadow: none!important;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border-color: $grey;
+    -webkit-text-fill-color: $grey;
+    transition: background-color 5000s ease-in-out 0s;
+}
+*/

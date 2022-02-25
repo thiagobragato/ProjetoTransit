@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font/Arciform.otf">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"> </script>
+    <script src="js.js"></script>
+    <title>Transit</title>
+</head>
+
+<body>
+    <section id="header">
+        <header>
+            <div class="container-lg logo">
+                <div class="row menu-f">
+                    <div class="conteudo-menu d-flex align-items-center gap-3 flex-wrap justify-content-between">
+                        <div class=" d-md-flex gap-3 ">
+                            <div class="">
+                                <h1 class="c-branco mb-0">Transit</h1>
+                            </div>
+                            <nav id="nav">
+                                <div id="menu" class="w-100">
+                                    <ul class="gap-lg-4 gap-md-2 mb-0 p-0 text-center d-md-flex ">
+                                        <li><a href="#recurso"> Recursos</a></li>
+                                        <li><a href="#tabela">Planos</a></li>
+                                        <li><a href="#clientes"> Clientes</a></li>
+                                        <li><a href="#duvida">Preguntas</a></li>
+                                    </ul>
+                                    <div class="d-md-none text-center mt-5 btn-m">
+                                        <button class="btn">Comprar</button>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div id="btnmob" class="d-md-none ">
+                            <button class="btn p-0 c-branco">Menu</button>
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="4" rx="2" fill="white" />
+                                <rect y="8" width="24" height="4" rx="2" fill="white" />
+                                <rect y="16" width="24" height="4" rx="2" fill="white" />
+                            </svg>
+                        </div>
+                        <div class="d-none d-md-flex">
+                            <button class="btn">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="destaque">
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-md-5">
+                    <img src="img/f-recurso-mb.png" alt="" class="img-fluid d-md-none w-100">
+                    <h2>Bem vindo á Transit.</h2>
+                    <h1>Transformando ações <br>
+                        em oportunidades</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod egestas odio sapien dis massa
+                        massa massa. Accumsan, cras tristique adipiscing consectetur. Laoreet ante quisque in nulla
+                        eleifend neque sed rutrum donec.</p>
+                    <div class="col-md-5 p-0">
+                        <button class="btn w-100 btn-gradiente">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-1 d-none d-md-flex">
+                    <img src="img/ft-recurso.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recurso">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="bordas">
+                    </div>
+                    <h2 class="c-azul-escuro bold mt-3 mb-3 h5">Melhores oportunidades <br
+                            class="d-md-inline-block d-none">
+                        de negócios para você</h2>
+                    <p class="c-cinza mt-3 mb-md-0 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                        minima ex ipsum provident nesciunt in eos eaque. Architecto fugiat, a temporibus illo
+                        praesentium minus exercitationem dolore rerum doloremque mollitia laborum.</p>
+                </div>
+                <div class="col-md-3 offset-md-1 d-flex d-md-block mb-3">
+                    <img src="img/cursos.png" alt="" class="img-fluid mb-3 mr-3 h-78">
+                    <div class="d-block">
+                        <p class="c-azul-escuro bold m-0" >Cursos profissionais</p>
+                        <div class="bordas mt-2 mb-3"></div>
+                        <p class="cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod egestas odio
+                            sapien dis massa massa massa. </p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex d-md-block mb-3 ">
+                    <img src="img/imer.png" alt="" class="img-fluid mb-3 h-78 mr-3">
+                    <div class="d-block">
+                        <p class="c-azul-escuro bold m-0" >Imersões</p>
+                        <div class="bordas mt-2 mb-3"></div>
+                        <p class="cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod egestas odio
+                            sapien dis massa massa massa. </p>
+                    </div>
+                </div>
+                <div class="d-md-flex mt-md-2 pl-md-3 pl-0  c-2 d-block " >
+                    <div class="col-md-3 offset-md-6 d-flex d-md-block mb-3">
+                        <img src="img/solu.png" alt="" class="img-fluid mb-3 h-78 mr-3">
+                        <div class="d-block">
+                            <p class="c-azul-escuro bold m-0">Soluções criativas</p>
+                            <div class="bordas mt-2 mb-3"></div>
+                            <p class="cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod egestas
+                                odio sapien dis massa massa massa. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex d-md-block">
+                        <img src="img/analise.png" alt="" class="img-fluid mb-3 h-78 mr-3">
+                        <div class="d-block">
+                            <p class="c-azul-escuro bold m-0">Análises e estatísticas</p>
+                            <div class="bordas mt-2 mb-3"></div>
+                            <p class="cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod egestas
+                                odio sapien dis massa massa massa. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="img/recurso-mb.png" alt="" class="img-fluid mt-5 pt-5 mb-3 d-md-none">
+        </div>
+        <div class="img-rec d-none d-md-flex">
+            <img src="img/bg-recursos.png" alt="" class="img-fluid ">
+        </div>
+    </section>
+    <section id="recurso02">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-7">
+                    <div class="bordas mb-3"></div>
+                    <h2 class="c-azul-escuro bold h5 ">Melhores oportunidades <br>
+                        de negócios para você</h2>
+                    <p class="c-cinza mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quia
+                        ratione quo quaerat magni? At, nobis qui ducimus aut quae corrupti deleniti sunt nostrum
+                        temporibus tempore placeat, labore reiciendis repellendus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="img/recurso02-mb.png" alt="" class="img-fluid w-100 mt-4 d-md-none">
+    <section id="recurso03">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="bordas mb-3"></div>
+                    <h2 class="c-azul-escuro bold h5">Melhores oportunidades <br>
+                        de negócios para você</h2>
+                    <p class="c-cinza mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quia
+                        ratione quo quaerat magni? At, nobis qui ducimus aut quae corrupti deleniti sunt nostrum
+                        temporibus tempore placeat, labore reiciendis repellendus.</p>
+                </div>
+                <div class="col-md-5 text-end offset-md-2" >
+                    <p class="c-branco bold mr-5">Melhorando rendimentos</p>
+                    <img src="img/recurso03.png" alt="" class="img-fluid d-md-flex d-none">
+                </div>
+            </div>
+        </div>
+        <img src="img/bg-recurso03.png" alt="" class="img-fluid d-lg-flex d-none img-rec">
+    </section>
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <h2 class="bold c-azul-escuro text-center h3">Conheça nosso alcance e tire suas conclusões</h2>
+            </div>
+            <div id="modal" class="text-center col-lg-6 offset-lg-3 col-md-10 offset-md-1">
+                <button id="fmodal" class="btn btn-azul-escuro">Fechar</button>
+                <iframe class="w-100" src="https://www.youtube.com/embed/awm2k3sEtOY" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text-center" id="amodal"><img src="img/video.png" alt="" class="img-fluid"></div>
+        </div>
+    </section>
+    <section id="planos">
+        <div class="container">
+            <div class="row">
+                <h2 class="c-azul-escuro bold text-center h3 mb-3">Nossos planos para seu negócio</h2>
+                <p class=" c-cinza text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum
+                    ut possimus ipsum voluptatibus quas illo accusantium. Nostrum magni voluptates, itaque minus,
+                    deleniti similique laudantium ut voluptatibus earum impedit tenetur?</p>
+            </div>
+        </div>
+    </section>
+    <section id="tabela">
+        <div class="container">
+            <div class="row">
+                <div class=" d-md-flex d-block col-md-8 offset-md-2">
+                    <div class="col tab">
+                        <h2 class="tab-fre">R$29 <span class="tab-mon">/mes</span></h2>
+                        <h3 class="tab-fre">Start</h3>
+                        <p class="c-cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                    </div>
+                    <div class="col tab active-p">
+                        <h2 class="tab-fre">R$180 <span class="tab-mon">/mes</span></h2>
+                        <h3 class="tab-fre ">Pro</h3>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                    </div>
+                    <div class="col tab">
+                        <h2 class="tab-fre">R$250 <span class="tab-mon">/mes</span></h2>
+                        <h3 class="tab-fre ">Expert</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                        <div class="d-flex">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.5" cy="13.5" r="13.5" fill="url(#paint0_linear_302_171)" />
+                                <path
+                                    d="M18.5866 9.53983L18.2921 9.28679C17.8032 8.86665 17.0685 8.91348 16.6368 9.39214L11.7095 14.8555L10.2222 13.5745C9.73383 13.1539 8.99903 13.1998 8.56687 13.678L8.30644 13.9661C8.09525 14.1997 7.9856 14.5078 8.00152 14.8225C8.0176 15.137 8.15792 15.4323 8.39183 15.6434L11.1182 18.14C11.3542 18.3617 11.6705 18.4773 11.9939 18.4601C12.3172 18.443 12.6195 18.2944 12.8307 18.049L18.7127 11.2146C18.9182 10.9758 19.0203 10.6652 18.9966 10.3512C18.973 10.0369 18.8255 9.74511 18.5866 9.53983Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_302_171" x1="0" y1="13.5" x2="27" y2="13.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2C7AED" />
+                                        <stop offset="1" stop-color="#4BC3CC" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="tab-p ml-2">Recursos Start</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clientes">
+        <div class="container">
+            <div class="row">
+                <h2 class="h2 c-azul-escuro text-center bold">Nossos clientes</h2>
+            </div>
+        </div>
+    </section>
+    <section id="slider">
+        <div class="container">
+            <!-- <div id="slide" class="col-md-10 offset-md-1 d-md-block d-none">
+                    <div class="w-100 justify-content-md-between d-flex mr-5">
+                        <img src="img/company.png" alt="" class="img-fluid">
+                        <img src="img/Company-02.png" alt="" class="img-fluid">
+                        <img src="img/Company-03.png" alt="" class="img-fluid">
+                        <img src="img/Company-04.png" alt="" class="img-fluid">
+                        <img src="img/Company-05.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="w-100 justify-content-md-between d-md-flex">
+                        <img src="img/company.png" alt="" class="img-fluid">
+                        <img src="img/Company-02.png" alt="" class="img-fluid">
+                        <img src="img/Company-03.png" alt="" class="img-fluid">
+                        <img src="img/Company-04.png" alt="" class="img-fluid">
+                        <img src="img/Company-05.png" alt="" class="img-fluid">
+                    </div>
+                </div> -->
+            <div id="slide-mob" class="">
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/company.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-02.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-03.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-04.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-05.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-05.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-05.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-05.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-05.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="img/Company-05.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="new">
+        <div class="container">
+            <div class="row">
+                <div class=" cont-new col-9 offset-md-3">
+                    <div>
+                        <h2 class="h4 c-branco">Assine nossa Newsletter</h2>
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" placeholder="Nome" class="mr-md-2 mb-3 w-100 col-md-3">
+                        <input type="text" placeholder="Seu melhor e-mail" class="mr-md-3 w-100 col-md-3">
+                        <button class="mt-3 mt-md-0 btn btn-azul-claro">Enviar</button>
+                    </div>
+                    <div>
+                        <p class="c-branco">Seja o primeiro da fila a receber insights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="duvida">
+        <div class="container">
+            <div class="row" >
+                <h2 class="h4 c-azul-escuro text-center">Dúvidas frequentes</h2>
+            </div>
+        </div>
+    </section>
+    <section id="pergunta">
+        <div class="container">
+            <div class="row">
+                <div id="perguntas">
+                    <div class="peg">
+                        <h2 class="h2 c-branco peg-c" id="peg01">Pergunta 01 ?</h2>
+                        <p class="res c-branco active-d" id="res01">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Obcaecati harum excepturi architecto ab tempore odio illo, quas numquam et hic
+                            doloremque nemo qui aliquid? Ratione eaque adipisci ex architecto nostrum?</p>
+                    </div>
+                    <div class="peg">
+                        <h2 class="h2 c-branco peg-c" id="peg02">Pergunta 02 ?</h2>
+                        <p class="res c-branco " id="res02"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati harum excepturi architecto ab tempore odio illo, quas numquam et hic doloremque
+                            nemo qui aliquid? Ratione eaque adipisci ex architecto nostrum?</p>
+                    </div>
+                    <div class="peg">
+                        <h2 class="h2 c-branco peg-c" id="peg03">Pergunta 03 ?</h2>
+                        <p class="res c-branco" id="res03">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati harum excepturi architecto ab tempore odio illo, quas numquam et hic doloremque
+                            nemo qui aliquid? Ratione eaque adipisci ex architecto nostrum?</p>
+                    </div>
+                    <div class="peg">
+                        <h2 class="h2 c-branco peg-c" id="peg04">Pergunta 04 ?</h2>
+                        <p class="res c-branco" id="res04">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati harum excepturi architecto ab tempore odio illo, quas numquam et hic doloremque
+                            nemo qui aliquid? Ratione eaque adipisci ex architecto nostrum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row f1">
+                <div class="col-md-2 text-center text-md-left">
+                    <h1 class=" mb-3">Transit</h1>
+                    <p class=" mb-3">(11) 0000-0000</p>
+                    <p class="p-footer p-cont">cotato@transit.com</p>
+                </div>
+                <div class="col-md-3 d-md-block d-none offset-md-2">
+                    <h2 class="c-azul-escuro h5 mb-3">Menu</h2>
+                    <div class="d-flex justify-content-between">
+                        <ul class="p-0">
+                            <li class="mb-2"><a href="#header">Home</a></li>
+                            <li><a href="#planos">Preços</a></li>
+                        </ul>
+                        <ul class="p-0">
+                            <li class="mb-2"><a href="#recurso">Serviço</a> </li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 d-md-block d-none offset-md-1">
+                    <h2 class="c-azul-escuro h5 mb-3">Social</h2>
+                    <div class="d-flex justify-content-between">
+                        <ul class="p-0">
+                            <li class="mb-2"><a href="#">Twitter</a> </li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                        <ul class="p-0">
+                            <li class="mb-2"><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row f2">
+                <div class="icons d-md-flex d-block offset-md-3 col-md-6 justify-content-between text-center ">
+                    <svg class="mr-3 mr-md-0 mb-3 mb-md-0" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="28" fill="#0B1F3B" />
+                        <path
+                            d="M22.3254 28.7824H24.9561V39.6129C24.9561 39.8267 25.1294 40 25.3432 40H29.8038C30.0177 40 30.1909 39.8267 30.1909 39.6129V28.8334H33.2152C33.4119 28.8334 33.5773 28.6859 33.5998 28.4905L34.0591 24.5033C34.0717 24.3936 34.037 24.2837 33.9636 24.2014C33.8901 24.119 33.785 24.0719 33.6746 24.0719H30.1911V21.5725C30.1911 20.819 30.5968 20.437 31.397 20.437C31.511 20.437 33.6746 20.437 33.6746 20.437C33.8885 20.437 34.0617 20.2636 34.0617 20.0499V16.39C34.0617 16.1761 33.8885 16.0029 33.6746 16.0029H30.5357C30.5135 16.0018 30.4644 16 30.3919 16C29.8473 16 27.9541 16.1069 26.4587 17.4827C24.8018 19.0072 25.0321 20.8326 25.0871 21.1491V24.0718H22.3254C22.1115 24.0718 21.9383 24.2451 21.9383 24.4589V28.3952C21.9383 28.6091 22.1115 28.7824 22.3254 28.7824Z"
+                            fill="white" />
+                    </svg>
+                    <svg class="mr-3 mr-md-0 mb-3 mb-md-0" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="28" fill="#0B1F3B" />
+                        <path
+                            d="M24.9536 37.8212C23.9158 37.8212 22.8475 37.7371 21.7729 37.5687C19.8802 37.2717 17.9642 36.2816 17.422 35.9852L16 35.2077L17.5395 34.7014C19.2224 34.1481 20.2462 33.8048 21.5134 33.2672C20.2445 32.6527 19.2666 31.5473 18.7958 30.1184L18.4377 29.0311L18.7314 29.0759C18.4529 28.7952 18.233 28.5103 18.0625 28.2512C17.4562 27.3304 17.1352 26.2052 17.2035 25.241L17.2709 24.292L17.8391 24.5121C17.5994 24.0594 17.4262 23.576 17.3244 23.0694C17.0763 21.8338 17.2839 20.5211 17.9092 19.3733L18.4042 18.4647L19.0661 19.2597C21.1595 21.7745 23.811 23.2662 26.958 23.7029C26.8295 22.8169 26.9258 21.9618 27.2446 21.1953C27.6158 20.3029 28.276 19.5461 29.1535 19.0067C30.1279 18.4077 31.3097 18.1175 32.481 18.1895C33.7237 18.2658 34.852 18.7315 35.7481 19.5369C36.1858 19.4232 36.5082 19.3018 36.944 19.1378C37.2062 19.0391 37.5036 18.927 37.8756 18.7989L39.2467 18.3264L38.3526 20.88C38.4116 20.8751 38.4724 20.8709 38.5359 20.8681L40 20.8018L39.1346 21.9845C39.085 22.0523 39.0724 22.0715 39.0548 22.098C38.9851 22.2031 38.8983 22.3339 37.7105 23.9199C37.4131 24.3171 37.2646 24.8343 37.2923 25.3767C37.3975 27.4377 37.1447 29.3024 36.5402 30.9189C35.9686 32.4482 35.0827 33.7603 33.9076 34.8188C32.4534 36.1284 30.5991 37.025 28.396 37.4835C27.3153 37.7084 26.1548 37.8212 24.9536 37.8212Z"
+                            fill="white" />
+                    </svg>
+                    <svg class="mb-3 mb-md-0" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="28" fill="#0B1F3B" />
+                        <path
+                            d="M39.939 23.055C39.8828 21.7795 39.6765 20.9027 39.381 20.1428C39.0762 19.3363 38.6073 18.6142 37.9929 18.014C37.3927 17.4044 36.6658 16.9307 35.8686 16.6306C35.1044 16.3352 34.2321 16.1289 32.9567 16.0727C31.6717 16.0117 31.2638 15.9976 28.0047 15.9976C24.7456 15.9976 24.3377 16.0117 23.0574 16.0679C21.782 16.1241 20.9051 16.3306 20.1455 16.6259C19.3388 16.9307 18.6167 17.3996 18.0164 18.014C17.4068 18.6142 16.9333 19.3411 16.6331 20.1383C16.3376 20.9027 16.1313 21.7748 16.0751 23.0502C16.0141 24.3352 16 24.7431 16 28.0022C16 31.2613 16.0141 31.6692 16.0703 32.9495C16.1266 34.2249 16.333 35.1018 16.6285 35.8616C16.9333 36.6681 17.4068 37.3902 18.0164 37.9905C18.6167 38.6001 19.3435 39.0738 20.1407 39.3738C20.9051 39.6693 21.7772 39.8756 23.0529 39.9318C24.3329 39.9882 24.741 40.0021 28.0001 40.0021C31.2592 40.0021 31.6671 39.9882 32.9473 39.9318C34.2228 39.8756 35.0997 39.6693 35.8593 39.3738C37.4725 38.7501 38.748 37.4747 39.3717 35.8616C39.667 35.0972 39.8734 34.2249 39.9297 32.9495C39.9859 31.6692 40 31.2613 40 28.0022C40 24.7431 39.9952 24.3352 39.939 23.055ZM37.7773 32.8557C37.7257 34.028 37.5288 34.6611 37.3646 35.0831C36.9613 36.1289 36.1313 36.9588 35.0856 37.3622C34.6635 37.5263 34.0259 37.7232 32.8581 37.7747C31.592 37.8311 31.2123 37.8451 28.0094 37.8451C24.8066 37.8451 24.4221 37.8311 23.1606 37.7747C21.9882 37.7232 21.3552 37.5263 20.9331 37.3622C20.4127 37.1699 19.939 36.8651 19.5545 36.4665C19.156 36.0772 18.8511 35.6083 18.6588 35.0879C18.4947 34.6658 18.2978 34.028 18.2463 32.8604C18.1899 31.5943 18.176 31.2144 18.176 28.0116C18.176 24.8087 18.1899 24.4242 18.2463 23.1629C18.2978 21.9906 18.4947 21.3575 18.6588 20.9355C18.8511 20.4149 19.156 19.9414 19.5593 19.5567C19.9484 19.1581 20.4173 18.8533 20.9379 18.6611C21.3599 18.497 21.9978 18.3001 23.1653 18.2484C24.4314 18.1922 24.8114 18.1781 28.014 18.1781C31.2216 18.1781 31.6013 18.1922 32.8629 18.2484C34.0352 18.3001 34.6683 18.497 35.0903 18.6611C35.6107 18.8533 36.0844 19.1581 36.4689 19.5567C36.8675 19.9459 37.1723 20.4149 37.3646 20.9355C37.5288 21.3575 37.7257 21.9951 37.7773 23.1629C37.8336 24.429 37.8477 24.8087 37.8477 28.0116C37.8477 31.2144 37.8336 31.5896 37.7773 32.8557Z"
+                            fill="white" />
+                        <path
+                            d="M28.0047 21.8358C24.6003 21.8358 21.8382 24.5977 21.8382 28.0022C21.8382 31.4068 24.6003 34.1687 28.0047 34.1687C31.4092 34.1687 34.1711 31.4068 34.1711 28.0022C34.1711 24.5977 31.4092 21.8358 28.0047 21.8358ZM28.0047 32.0023C25.7961 32.0023 24.0046 30.211 24.0046 28.0022C24.0046 25.7935 25.7961 24.0022 28.0047 24.0022C30.2134 24.0022 32.0047 25.7935 32.0047 28.0022C32.0047 30.211 30.2134 32.0023 28.0047 32.0023Z"
+                            fill="white" />
+                        <path
+                            d="M35.8547 21.592C35.8547 22.3869 35.2101 23.0315 34.4149 23.0315C33.62 23.0315 32.9754 22.3869 32.9754 21.592C32.9754 20.7968 33.62 20.1524 34.4149 20.1524C35.2101 20.1524 35.8547 20.7968 35.8547 21.592Z"
+                            fill="white" />
+                    </svg>
+                    <div class="align-items-md-center d-flex justify-content-center">
+                        <p class="p-footer c-azul-escuro m-0">2021 Infografic. Todos direitos reservados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="svg-s" id="btn-f">
+                <a href="#header">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+                        viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M587.572,186.882C555.3,111.658,500.506,56.864,425.289,24.598C387.413,8.352,347.995,0.171,306.5,0.171
+                                c-41.488,0-81.213,8.259-119.118,24.427C111.53,56.949,56.415,111.537,24.092,186.882C7.902,224.629,0,264.176,0,305.664
+                                c0,41.495,7.902,81.37,24.092,119.124c32.323,75.346,87.438,130.27,163.29,162.619c37.905,16.162,77.63,24.422,119.118,24.422
+                                c41.495,0,80.913-8.174,118.789-24.422c75.217-32.271,130.011-87.402,162.283-162.619C603.819,386.913,612,347.159,612,305.664
+                                C612,264.176,603.819,224.758,587.572,186.882z M553.444,410.397c-14.198,33.064-33.13,61.904-57.222,85.996
+                                c-23.756,23.756-52.531,42.83-85.66,57.215c-33.122,14.391-67.586,21.414-104.062,21.414c-48.52,0-93.734-11.971-135.179-36.135
+                                c-41.203-24.02-74.018-56.842-98.039-98.037c-24.163-41.453-36.141-86.668-36.141-135.187c0-48.52,12.049-93.355,36.141-134.508
+                                c24.092-41.16,56.836-74.024,98.039-98.038c41.445-24.17,86.66-36.142,135.179-36.142s93.355,12.05,134.515,36.142
+                                c41.153,24.092,73.818,56.95,97.703,98.038c23.971,41.231,36.142,85.989,36.142,134.508
+                                C574.859,342.142,567.686,377.212,553.444,410.397z" />
+                                <path
+                                    d="M321.562,188.552c-3.848-3.855-8.366-5.375-13.385-5.689c-0.335-0.021-0.335,0-0.335,0c-4.683,0-8.652,2.056-12.385,5.689
+                                l-166.63,162.283c-7.31,7.117-7.631,18.652-0.671,26.105c7.431,7.945,18.981,7.596,26.769,0l152.918-149.234L457.076,376.94
+                                c7.695,7.695,19.402,7.695,26.098,0c7.024-5.689,7.024-20.416,0-26.105L321.562,188.552z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="wpp">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+                    viewBox="0 0 30.667 30.667" style="enable-background:new 0 0 30.667 30.667;" xml:space="preserve">
+                    <g>
+                        <path d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017
+		c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382
+		c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076
+		c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427
+		c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437
+		c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536
+		c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609
+		c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611
+		c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787
+		c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739
+		C23.307,19.268,23.307,18.533,23.214,18.38z" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
