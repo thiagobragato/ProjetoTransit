@@ -7963,8 +7963,33 @@ h3 {
   border-color: #000000 !important;
 }
 
+a {
+  position: relative;
+  text-decoration: none;
+}
 a:hover {
   text-decoration: none;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background-color: #4BC3CC;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .c-2 .bordas {
@@ -8029,6 +8054,10 @@ a:hover {
   line-height: 130%;
   font-family: "Fredoka One", cursive;
   padding: 16px;
+}
+
+#f-menu {
+  display: none;
 }
 
 .btn-azul-claro {
@@ -8323,11 +8352,15 @@ select:-webkit-autofill:focus {
     padding-bottom: 50px;
   }
   footer .svg-s {
+    cursor: pointer;
     display: none;
     z-index: 999;
     position: fixed;
     top: 80vh;
     left: 80vw;
+  }
+  footer .svg-s a:hover:before {
+    visibility: hidden;
   }
   footer .svg-s svg path {
     fill: #0B1F3B;
@@ -8365,7 +8398,10 @@ select:-webkit-autofill:focus {
     transition: 0.5s;
   }
   footer ul li a:hover {
-    color: #2C7AED;
+    color: #4BC3CC;
+    background-color: #0B1F3B;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
 }
 @media screen and (min-width: 768px) {
@@ -8391,26 +8427,26 @@ select:-webkit-autofill:focus {
     color: #2C7AED;
   }
   #header #menu ul li {
-    border: none;
+    border-bottom: none;
     padding: 0px;
   }
   #header #menu a {
-    color: #2C7AED;
-    padding: 0px 10px;
-    transition: 0.6s;
+    color: #0B1F3B;
+    padding: 3px 10px;
   }
   #header #menu a:hover {
-    color: #0B1F3B;
+    color: #4BC3CC;
   }
   #header button {
+    background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
+    color: #0B1F3B;
+    transition: 0.6s;
+  }
+  #header button:hover {
     color: #4BC3CC;
     background-image: none;
     background-color: white;
     border: 1px solid #2C7AED;
-  }
-  #header button:hover {
-    background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
-    transition: 0.6s;
   }
   #header .conteudo-menu {
     padding: 10px;
@@ -8428,6 +8464,12 @@ select:-webkit-autofill:focus {
   }
   #destaque .cont-dest {
     padding-top: 30px;
+  }
+  #destaque h2 {
+    color: #FFFFFF;
+  }
+  #destaque h1 {
+    color: #FFFFFF;
   }
 
   #recurso {
@@ -8584,26 +8626,9 @@ select:-webkit-autofill:focus {
     background-image: none;
   }
   #header #menu {
-    padding: 16px;
-  }
-  #header button {
-    background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
-    color: #0B1F3B;
-    transition: 0.6s;
-  }
-  #header button:hover {
-    color: #4BC3CC;
-    background-image: none;
-    background-color: white;
-    border: 1px solid #2C7AED;
+    padding: 10px;
   }
 
-  #destaque h2 {
-    color: #FFFFFF;
-  }
-  #destaque h1 {
-    color: #FFFFFF;
-  }
   #destaque p {
     color: #FFFFFF;
   }

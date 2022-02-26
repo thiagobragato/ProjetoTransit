@@ -193,11 +193,15 @@
 footer{
     padding-bottom: 50px;
     .svg-s{
+        cursor: pointer;
         display: none;
         z-index: 999;
         position: fixed;
         top: 80vh;
         left: 80vw;
+        a:hover:before {
+            visibility: hidden;
+          }
         svg{
             path{
                 fill: $azul-escuro;
@@ -242,7 +246,10 @@ footer{
                 padding: 5px;
                 transition: 0.5s;
                 &:hover{
-                    color: $azul;
+                    color: $azul-claro;
+                    background-color: $azul-escuro;
+                    border-radius: 8px;
+                    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
             }
             }
         }
@@ -252,6 +259,7 @@ footer{
 
 }
 @media screen and (min-width: $md){
+    
     #header{
         header{
             background-image: none;
@@ -273,31 +281,31 @@ footer{
              ul{
                  color: $azul;
                  li{
-                     border: none;
+                     border-bottom: none;
                      padding: 0px;
                  }
              }
             
             a{
-                color: $azul;
-                padding: 0px 10px;
-                transition: 0.6s;
-                
+                color: $azul-escuro;
+                padding: 3px 10px;
                 &:hover{
-                    color: $azul-escuro;
+                    color: $azul-claro;
                 }
             }
         }
         button{
-            color: $azul-claro;
-            background-image: none;
-            background-color: white;
-            border: 1px solid $azul;
+            background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
+            color: $azul-escuro;
+            transition: 0.6s;
             &:hover{
-                background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
-                transition: 0.6s;
+                color: $azul-claro;
+                background-image: none;
+                background-color: white;
+                border: 1px solid $azul;
             }
         }
+        
         .conteudo-menu{
             padding: 10px;
         }
@@ -310,6 +318,12 @@ footer{
         background-size: contain;
         .cont-dest{
             padding-top: 30px;
+        }
+        h2{
+            color: $branco;
+        }
+        h1{
+            color: $branco;
         }
     }
     #recurso{
@@ -454,6 +468,7 @@ footer{
             color: $branco;
         }
     }
+    
 }
 
 @media screen and (min-width: $lg) {
@@ -463,28 +478,12 @@ footer{
        }
        padding: 40px 0px;
        #menu{
-           padding: 16px;
+           padding: 10px;
        }
-       button{
-           background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
-           color: $azul-escuro;
-           transition: 0.6s;
-           &:hover{
-               color: $azul-claro;
-               background-image: none;
-               background-color: white;
-               border: 1px solid $azul;
-           }
-       }
+
   
    }
    #destaque{
-    h2{
-        color: $branco;
-    }
-    h1{
-        color: $branco;
-    }
     p{
         color: $branco;
     }

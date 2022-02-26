@@ -14,6 +14,9 @@ $(document).ready(function() {
 
     $("#btnmob").click(() =>{
         $('#nav').toggleClass('active');
+        $('#a-menu').toggle(100);
+        $('#f-menu').toggle(100);
+       
     });
     $("#amodal").click(() =>{
         $('#modal').fadeIn(400);
