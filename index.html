@@ -32,15 +32,14 @@
 <body>
     <section id="header">
         <header>
-            <div class="container-lg logo">
-                <div class="row menu-f">
-                    <div class="conteudo-menu d-flex align-items-center gap-3 flex-wrap justify-content-between">
-                        <div class=" d-md-flex gap-3 ">
-                            <div class="">
-                                <h1 class="c-branco mb-0">Transit</h1>
-                            </div>
-                            <nav id="nav">
-                                <div id="menu" class="w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="conteudo-menu d-flex">
+                            <nav id="nav" class="d-md-flex col-md-12 p-0 position-static align-items-center">
+                                <div class="col-md-3 col-lg-2 p-0">
+                                    <h1 class="c-branco mb-0">Transit</h1>
+                                </div>
+                                <div id="menu" class="col-md-7 col-lg-8">
                                     <ul class="gap-lg-4 gap-md-2 mb-0 p-0 text-center d-md-flex ">
                                         <li><a href="#recurso"> Recursos</a></li>
                                         <li><a href="#tabela">Planos</a></li>
@@ -51,9 +50,11 @@
                                         <button class="btn">Comprar</button>
                                     </div>
                                 </div>
+                                <div class="d-none d-md-flex col-md-2 text-center">
+                                    <button class="btn w-100">Comprar</button>
+                                </div>
                             </nav>
-                        </div>
-                        <div id="btnmob" class="d-md-none ">
+                        <div id="btnmob" class="d-md-none d-flex align-items-center gap-2">
                             <button class="btn p-0 c-branco">Menu</button>
                             <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -62,9 +63,6 @@
                                 <rect y="16" width="24" height="4" rx="2" fill="white" />
                             </svg>
                         </div>
-                        <div class="d-none d-md-flex">
-                            <button class="btn">Comprar</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -72,8 +70,8 @@
     </section>
     <section id="destaque">
         <div class="container">
-            <div class="row position-relative">
-                <div class="col-md-5">
+            <div class="row position-relative cont-dest">
+                <div class="col-lg-5 col-md-7">
                     <img src="img/f-recurso-mb.png" alt="" class="img-fluid d-md-none w-100">
                     <h2>Bem vindo á Transit.</h2>
                     <h1>Transformando ações <br>
@@ -81,11 +79,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod egestas odio sapien dis massa
                         massa massa. Accumsan, cras tristique adipiscing consectetur. Laoreet ante quisque in nulla
                         eleifend neque sed rutrum donec.</p>
-                    <div class="col-md-5 p-0">
+                    <div class="col-md-5 p-0 te">
                         <button class="btn w-100 btn-gradiente">Saiba mais</button>
                     </div>
                 </div>
-                <div class="col-md-6 offset-md-1 d-none d-md-flex">
+                <div class="col-lg-6 offset-lg-1 col-md-5 d-none d-md-flex">
                     <img src="img/ft-recurso.png" alt="" class="img-fluid">
                 </div>
             </div>
@@ -94,17 +92,17 @@
     <section id="recurso">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-lg-5 mb-5">
                     <div class="bordas">
                     </div>
                     <h2 class="c-azul-escuro bold mt-3 mb-3 h5">Melhores oportunidades <br
                             class="d-md-inline-block d-none">
                         de negócios para você</h2>
-                    <p class="c-cinza mt-3 mb-md-0 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                    <p class="c-cinza mt-3 mb-md-4 mb-lg-0 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
                         minima ex ipsum provident nesciunt in eos eaque. Architecto fugiat, a temporibus illo
                         praesentium minus exercitationem dolore rerum doloremque mollitia laborum.</p>
                 </div>
-                <div class="col-md-3 offset-md-1 d-flex d-md-block mb-3">
+                <div class="col-lg-3 col-md-6 offset-lg-1 d-flex d-md-block mb-3">
                     <img src="img/cursos.png" alt="" class="img-fluid mb-3 mr-3 h-78">
                     <div class="d-block">
                         <p class="c-azul-escuro bold m-0" >Cursos profissionais</p>
@@ -113,7 +111,7 @@
                             sapien dis massa massa massa. </p>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex d-md-block mb-3 ">
+                <div class="col-lg-3 col-md-6 d-flex d-md-block mb-3 ">
                     <img src="img/imer.png" alt="" class="img-fluid mb-3 h-78 mr-3">
                     <div class="d-block">
                         <p class="c-azul-escuro bold m-0" >Imersões</p>
@@ -122,8 +120,8 @@
                             sapien dis massa massa massa. </p>
                     </div>
                 </div>
-                <div class="d-md-flex mt-md-2 pl-md-3 pl-0  c-2 d-block " >
-                    <div class="col-md-3 offset-md-6 d-flex d-md-block mb-3">
+                <div class="d-md-flex mt-md-2 pl-md-3 pl-0 c-2 d-block" >
+                    <div class="col-lg-3 col-md-6 offset-lg-6 d-flex d-md-block mb-3 p-md-0 p-lg-3">
                         <img src="img/solu.png" alt="" class="img-fluid mb-3 h-78 mr-3">
                         <div class="d-block">
                             <p class="c-azul-escuro bold m-0">Soluções criativas</p>
@@ -132,7 +130,7 @@
                                 odio sapien dis massa massa massa. </p>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex d-md-block">
+                    <div class="col-lg-3 col-md-6 d-flex d-md-block">
                         <img src="img/analise.png" alt="" class="img-fluid mb-3 h-78 mr-3">
                         <div class="d-block">
                             <p class="c-azul-escuro bold m-0">Análises e estatísticas</p>
@@ -143,17 +141,19 @@
                     </div>
                 </div>
             </div>
-            <img src="img/recurso-mb.png" alt="" class="img-fluid mt-5 pt-5 mb-3 d-md-none">
         </div>
-        <div class="img-rec d-none d-md-flex">
+        <div class="img-rec d-none d-lg-flex">
             <img src="img/bg-recursos.png" alt="" class="img-fluid ">
         </div>
     </section>
     <section id="recurso02">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 offset-md-7">
-                    <div class="bordas mb-3"></div>
+            <div class="d-md-flex">
+                <div class="d-lg-none col-md-5">
+                    <img src="img/recurso-mb.png" alt="" class="img-fluid mt-5 mt-md-0 pt-md-0 pt-5 ">
+                </div>
+                <div class="col-lg-5 offset-lg-7 col-md-6 offset-md-1">
+                    <div class="bordas mb-3 mt-5 mt-md-0"></div>
                     <h2 class="c-azul-escuro bold h5 ">Melhores oportunidades <br>
                         de negócios para você</h2>
                     <p class="c-cinza mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quia
@@ -167,7 +167,7 @@
     <section id="recurso03">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-lg-5 col-md-6">
                     <div class="bordas mb-3"></div>
                     <h2 class="c-azul-escuro bold h5">Melhores oportunidades <br>
                         de negócios para você</h2>
@@ -175,13 +175,13 @@
                         ratione quo quaerat magni? At, nobis qui ducimus aut quae corrupti deleniti sunt nostrum
                         temporibus tempore placeat, labore reiciendis repellendus.</p>
                 </div>
-                <div class="col-md-5 text-end offset-md-2" >
-                    <p class="c-branco bold mr-5">Melhorando rendimentos</p>
+                <div class="col-md-5 text-end offset-lg-2 mt-3 offset-md-1 rec-03" >
+                    <p class="c-branco bold mr-5 ">Melhorando rendimentos</p>
                     <img src="img/recurso03.png" alt="" class="img-fluid d-md-flex d-none">
                 </div>
             </div>
         </div>
-        <img src="img/bg-recurso03.png" alt="" class="img-fluid d-lg-flex d-none img-rec">
+        <img src="img/bg-recurso03.png" alt="" class="img-fluid d-md-flex d-none img-rec">
     </section>
     <section id="video">
         <div class="container">

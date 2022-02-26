@@ -7987,10 +7987,6 @@ a:hover {
   z-index: 999;
 }
 
-.active {
-  background-color: #e7e7e7;
-}
-
 .c-header {
   background-color: #e7e7e7;
 }
@@ -8032,7 +8028,7 @@ a:hover {
   font-size: 16px;
   line-height: 130%;
   font-family: "Fredoka One", cursive;
-  padding: 16px 56px;
+  padding: 16px;
 }
 
 .btn-azul-claro {
@@ -8073,7 +8069,6 @@ a:hover {
 .btn-gradiente {
   background-color: #FFFFFF;
   color: #4BC3CC;
-  padding: 16px 48px;
   transition: 0.7s;
 }
 .btn-gradiente:hover {
@@ -8126,8 +8121,12 @@ select:-webkit-autofill:focus {
 }
 */
 @media screen and (min-width: 0px) {
+  #header header {
+    background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
+  }
   #header .conteudo-menu {
-    padding: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .nav-f {
@@ -8197,10 +8196,6 @@ select:-webkit-autofill:focus {
   #destaque .btn {
     background-color: #4BC3CC;
     color: #FFFFFF;
-  }
-
-  .logo {
-    background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
   }
 
   #recurso {
@@ -8331,7 +8326,7 @@ select:-webkit-autofill:focus {
     display: none;
     z-index: 999;
     position: fixed;
-    top: 20vh;
+    top: 80vh;
     left: 80vw;
   }
   footer .svg-s svg path {
@@ -8339,7 +8334,7 @@ select:-webkit-autofill:focus {
   }
   footer .wpp {
     position: fixed;
-    top: 10vh;
+    top: 90vh;
     left: 80vw;
     cursor: pointer;
   }
@@ -8374,8 +8369,11 @@ select:-webkit-autofill:focus {
   }
 }
 @media screen and (min-width: 768px) {
+  #header header {
+    background-image: none;
+  }
   #header .btn {
-    padding: 16px 30px;
+    padding: 16px 0px;
   }
   #header #menu {
     display: flex;
@@ -8419,12 +8417,22 @@ select:-webkit-autofill:focus {
   }
 
   #destaque {
-    padding-top: 50px;
+    padding-top: 320px;
+    margin-top: -306px;
+    background-image: url("../img/bg-destaque.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+  }
+  #destaque .cont-dest {
+    padding-top: 30px;
   }
 
   #recurso {
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     position: relative;
   }
   #recurso .img-rec {
@@ -8441,8 +8449,8 @@ select:-webkit-autofill:focus {
 
   #recurso03 {
     position: relative;
-    padding-top: 176px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
   #recurso03 p {
     margin-bottom: -20px;
@@ -8451,8 +8459,11 @@ select:-webkit-autofill:focus {
     position: absolute;
     right: 0;
     top: -50px;
-    width: 700px;
+    width: 350px;
     z-index: -1;
+  }
+  #recurso03 .rec-03 p {
+    font-size: 10px;
   }
 
   #video {
@@ -8569,8 +8580,11 @@ select:-webkit-autofill:focus {
   #header {
     padding: 40px 0px;
   }
+  #header header {
+    background-image: none;
+  }
   #header #menu {
-    padding: 16px 100px 16px 24px;
+    padding: 16px;
   }
   #header button {
     background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
@@ -8584,16 +8598,6 @@ select:-webkit-autofill:focus {
     border: 1px solid #2C7AED;
   }
 
-  #destaque {
-    padding-top: 203px;
-    margin-top: -159px;
-    background-image: url("../img/bg-destaque.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-  }
   #destaque h2 {
     color: #FFFFFF;
   }
@@ -8602,6 +8606,19 @@ select:-webkit-autofill:focus {
   }
   #destaque p {
     color: #FFFFFF;
+  }
+
+  #recurso {
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+
+  #recurso03 {
+    padding-top: 176px;
+    padding-bottom: 80px;
+  }
+  #recurso03 .img-rec {
+    width: 700px;
   }
 
   .logo {
