@@ -447,14 +447,10 @@ footer{
                 transition: 0.5s;
                 &:hover{
                     rect{
-                        fill: transparent;
-                        stroke: $azul-escuro;
-                        stroke-width: 2px;
+                        fill: #30405a;
+                        
                     }
-                    path{
-                        fill: $azul-escuro;
-                    }
-                    
+
                 }
             }
         }
@@ -497,6 +493,11 @@ footer{
         padding-bottom: 80px;
         .img-rec{
             width: 700px;
+        }
+        .rec-03{
+            p{
+                font-size: 16px;
+            }
         }
 
     }

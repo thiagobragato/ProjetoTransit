@@ -8601,12 +8601,7 @@ select:-webkit-autofill:focus {
     transition: 0.5s;
   }
   footer .icons svg:hover rect {
-    fill: transparent;
-    stroke: #0B1F3B;
-    stroke-width: 2px;
-  }
-  footer .icons svg:hover path {
-    fill: #0B1F3B;
+    fill: #30405a;
   }
   footer h1 {
     color: #FFFFFF;
@@ -8644,6 +8639,9 @@ select:-webkit-autofill:focus {
   }
   #recurso03 .img-rec {
     width: 700px;
+  }
+  #recurso03 .rec-03 p {
+    font-size: 16px;
   }
 
   .logo {

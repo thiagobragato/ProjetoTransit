@@ -19,10 +19,10 @@ $(document).ready(function() {
        
     });
     $("#amodal").click(() =>{
-        $('#modal').fadeIn(400);
+        $('#modal').fadeIn(600);
     });
     $("#fmodal").click(() =>{
-        $('#modal').fadeOut(400);
+        $('#modal').fadeOut(600);
     });
     $('.tab').click(function(){
         $('.tab').removeClass("active-p");
@@ -44,5 +44,8 @@ $(document).ready(function() {
         //$(this).children().eq(1).toggle(500);
         $(this).children('p').slideToggle(500);
     }); 
-    AOS.init();
+    AOS.init({
+        duration: 1000,
+    }
+    );
 });
