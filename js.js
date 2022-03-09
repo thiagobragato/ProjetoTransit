@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    var ScrollBtn = $('.svg-s')
+    var ScrollBtn = $('.svg-s');
+    var MenuFixed = $('#header')
     var flicktyGroup = ($( window ).width() >= 900) ? 1 : 2;
     var width = $(window).width();
     var screen = '';
@@ -11,18 +12,22 @@ $(document).ready(function() {
     $(window).scroll(function () { 
         ScrollBtn = ($(this).scrollTop() > 150) ? ScrollBtn.fadeIn(300) : ScrollBtn.fadeOut(300);
     });
+    $(window).scroll(function () { 
+        MenuFixed = ($(this).scrollTop() > 150) ?  MenuFixed.addClass('fixed-menu') :  MenuFixed.removeClass('fixed-menu');
+    });
 
     $("#btnmob").click(() =>{
         $('#nav').toggleClass('active');
         $('#a-menu').toggle(100);
         $('#f-menu').toggle(100);
+        $('.fixed-menu').toggleClass('menu-mob-100');
        
     });
     $("#amodal").click(() =>{
-        $('#modal').fadeIn(600);
+        $('#modal').fadeIn(400);
     });
     $("#fmodal").click(() =>{
-        $('#modal').fadeOut(600);
+        $('#modal').fadeOut(400);
     });
     $('.tab').click(function(){
         $('.tab').removeClass("active-p");

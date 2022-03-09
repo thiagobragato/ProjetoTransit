@@ -89,23 +89,29 @@
     }
     #modal{
         display: none;
-        position: absolute;
+        position: fixed;
+        top: 0; 
         left: 0;
-        bottom: -50px;
-        padding-top: 80px;
-        padding-bottom: 50px;
-        background-image: $azul-gradiente;
-        border-radius: 8px;
-        z-index: 999;
-        iframe{
-            height: 350px;
-        }
-        .btn{
-            position: absolute;
-            top: 20px;
-            right: 30px;
+        background-color: rgba($color: #0B1F3B, $alpha: 0.6);
+        z-index: 1001;
+        .cont-modal{
+            transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+            padding: 80px 15px 50px 15px;
+            background-image: $azul-gradiente;
+            border-radius: 8px;
+            width: 100;
+            iframe{
+                height: 350px;
+
+            }
+            .btn{
+                position: absolute;
+                top: 20px;
+                right: 30px;
+            }
         }
     }
+
     h2{
         margin-bottom: 40px;
         font-size: 25px;
@@ -246,10 +252,10 @@ footer{
                 padding: 5px;
                 transition: 0.5s;
                 &:hover{
-                    color: $azul-claro;
+                    color: $branco;
                     background-color: $azul-escuro;
                     border-radius: 8px;
-                    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+                    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
             }
             }
         }
@@ -483,6 +489,13 @@ footer{
     p{
         color: $branco;
     }
+   }
+   #video{
+       #modal{
+           .cont-modal{
+               width: 50% !important;
+           }
+       }
    }
    #recurso{
     padding-top: 90px;

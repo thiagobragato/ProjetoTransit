@@ -8123,6 +8123,20 @@ a:hover:before {
   z-index: 999;
 }
 
+.menu-mob-100 {
+  height: 100%;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(11, 31, 59, 0.6);
+  z-index: 1000;
+  padding: 0px !important;
+}
+
 /*
 button,
 input,
@@ -8240,19 +8254,23 @@ select:-webkit-autofill:focus {
   }
   #video #modal {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 0;
     left: 0;
-    bottom: -50px;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    background-color: rgba(11, 31, 59, 0.6);
+    z-index: 1001;
+  }
+  #video #modal .cont-modal {
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    padding: 80px 15px 50px 15px;
     background-image: linear-gradient(90deg, #2C7AED 0%, #4BC3CC 100%);
     border-radius: 8px;
-    z-index: 999;
+    width: 100;
   }
-  #video #modal iframe {
+  #video #modal .cont-modal iframe {
     height: 350px;
   }
-  #video #modal .btn {
+  #video #modal .cont-modal .btn {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -8398,10 +8416,10 @@ select:-webkit-autofill:focus {
     transition: 0.5s;
   }
   footer ul li a:hover {
-    color: #4BC3CC;
+    color: #FFFFFF;
     background-color: #0B1F3B;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
   }
 }
 @media screen and (min-width: 768px) {
@@ -8626,6 +8644,10 @@ select:-webkit-autofill:focus {
 
   #destaque p {
     color: #FFFFFF;
+  }
+
+  #video #modal .cont-modal {
+    width: 50% !important;
   }
 
   #recurso {
