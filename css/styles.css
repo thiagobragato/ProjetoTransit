@@ -8180,7 +8180,7 @@ select:-webkit-autofill:focus {
 
   #menu {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 60px;
     right: 0px;
@@ -8383,6 +8383,10 @@ select:-webkit-autofill:focus {
   footer .svg-s svg path {
     fill: #0B1F3B;
   }
+  footer .svg-s svg:hover path {
+    fill: #4BC3CC;
+    transition: 0.6s;
+  }
   footer .wpp {
     position: fixed;
     top: 90vh;
@@ -8391,6 +8395,10 @@ select:-webkit-autofill:focus {
   }
   footer .wpp svg path {
     fill: green;
+  }
+  footer .wpp svg:hover path {
+    fill: #4BC3CC;
+    transition: 0.6s;
   }
   footer .f1 {
     padding-top: 30px;

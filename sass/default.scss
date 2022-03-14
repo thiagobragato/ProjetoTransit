@@ -19,7 +19,7 @@
 }
 #menu{
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 60px;
     right: 0px;
@@ -212,7 +212,12 @@ footer{
             path{
                 fill: $azul-escuro;
             }
-
+            &:hover{
+                path{
+                    fill: $azul-claro;
+                    transition: 0.6s;
+                }
+            }
         }
     }
     .wpp{
@@ -223,6 +228,12 @@ footer{
         svg{
             path{
                 fill: green;
+            }
+            &:hover{
+                path{
+                    fill: $azul-claro;
+                    transition: 0.6s;
+                }
             }
         }
 

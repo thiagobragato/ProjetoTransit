@@ -13,14 +13,13 @@ $(document).ready(function() {
         ScrollBtn = ($(this).scrollTop() > 150) ? ScrollBtn.fadeIn(300) : ScrollBtn.fadeOut(300);
     });
     $(window).scroll(function () { 
-        MenuFixed = ($(this).scrollTop() > 150) ?  MenuFixed.addClass('fixed-menu') :  MenuFixed.removeClass('fixed-menu');
+        MenuFixed = ($(this).scrollTop() > 50) ?  MenuFixed.addClass('fixed-menu') :  MenuFixed.removeClass('fixed-menu');
     });
 
     $("#btnmob").click(() =>{
         $('#nav').toggleClass('active');
         $('#a-menu').toggle(100);
         $('#f-menu').toggle(100);
-        $('.fixed-menu').toggleClass('menu-mob-100');
        
     });
     $("#amodal").click(() =>{
@@ -50,7 +49,7 @@ $(document).ready(function() {
         $(this).children('p').slideToggle(500);
     }); 
     AOS.init({
-        duration: 1000,
+        duration: 800,
     }
     );
 });
